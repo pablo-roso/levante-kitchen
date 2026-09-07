@@ -218,10 +218,42 @@ img, svg { display: block; max-width: 100%; }
   pointer-events: none;
 }
 
+/* Ab 900px zwei Spalten: Text links, gedeckter Teller rechts. Darunter eine
+   Spalte, und der Teller rückt über den Text — auf dem Telefon ist das Bild
+   die schnellere Auskunft als die Zeile. */
 .hero-content {
   position: relative;
-  max-width: 760px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 330px);
+  align-items: center;
+  gap: 3em;
+  max-width: 1120px;
   margin: 0 auto;
+  text-align: left;
+}
+
+.hero-copy {
+  max-width: 620px;
+}
+
+.hero-art {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 22px 36px rgba(58, 28, 16, 0.28));
+}
+
+@media (max-width: 900px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 2.2em;
+    text-align: center;
+  }
+
+  .hero-content .hero-art {
+    order: -1;
+    max-width: 240px;
+  }
 }
 
 .eyebrow {
@@ -255,7 +287,13 @@ img, svg { display: block; max-width: 100%; }
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
-  justify-content: center;
+  justify-content: flex-start;
+}
+
+@media (max-width: 900px) {
+  .cta-row {
+    justify-content: center;
+  }
 }
 
 .hero .btn-outline {

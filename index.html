@@ -38,14 +38,75 @@
   <section id="top" class="hero">
     <div class="hero-pattern" aria-hidden="true"></div>
     <div class="hero-content">
-      <p class="eyebrow">Asiatisch · Orientalisch &amp; Kebap</p>
-      <h1>Levante Kitchen</h1>
-      <p class="claim">Levantinische Frische zwischen Vorlesung und Feierabend – Hummus, Falafel &amp; Shawarma, direkt in Uni-Nähe in Freiburg.</p>
-      <div class="cta-row">
-        <a href="#angebot" class="btn btn-primary">Speisekarte ansehen</a>
-        <a href="#kontakt" class="btn btn-outline">Anfahrt</a>
+      <div class="hero-copy">
+        <p class="eyebrow">Asiatisch · Orientalisch &amp; Kebap</p>
+        <h1>Levante Kitchen</h1>
+        <p class="claim">Levantinische Frische zwischen Vorlesung und Feierabend – Hummus, Falafel &amp; Shawarma, direkt in Uni-Nähe in Freiburg.</p>
+        <div class="cta-row">
+          <a href="#angebot" class="btn btn-primary">Speisekarte ansehen</a>
+          <a href="#kontakt" class="btn btn-outline">Anfahrt</a>
+        </div>
+        <p class="social-proof">Schon heute über 200 positive Bewertungen bei Google &amp; Lieferando</p>
       </div>
-      <p class="social-proof">Schon heute über 200 positive Bewertungen bei Google &amp; Lieferando</p>
+
+      <!--
+        Der gedeckte Teller: gezeichnet statt fotografiert, damit er in
+        jeder Größe scharf bleibt, nichts nachlädt und keine Bildrechte
+        braucht — und weil ein Stockfoto von Hummus aussieht wie das von
+        jedem anderen Laden, was für eine Seite, die genau aus der
+        Lieferportal-Vorlage heraus will, die falsche Aussage wäre.
+        Rein dekorativ, deshalb aria-hidden.
+      -->
+      <svg class="hero-art" viewBox="0 0 190 140" fill="none" aria-hidden="true" focusable="false">
+        <defs>
+          <radialGradient id="dish-hummus" cx=".42" cy=".34" r=".78">
+            <stop offset="0" stop-color="#f7e3bb" />
+            <stop offset=".65" stop-color="#e8cf9c" />
+            <stop offset="1" stop-color="#cdb075" />
+          </radialGradient>
+          <linearGradient id="dish-bowl" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ffffff" />
+            <stop offset="1" stop-color="#e6d7bd" />
+          </linearGradient>
+        </defs>
+
+        <g transform="rotate(-14 44 84)">
+          <ellipse cx="44" cy="84" rx="34" ry="24" fill="#e7c48c" />
+          <ellipse cx="44" cy="80" rx="34" ry="24" fill="#f2d9a9" />
+          <g fill="#d8ac6d" opacity=".7">
+            <circle cx="32" cy="74" r="2.6" /><circle cx="50" cy="70" r="2" />
+            <circle cx="44" cy="86" r="2.3" /><circle cx="58" cy="84" r="1.8" />
+          </g>
+        </g>
+
+        <ellipse cx="112" cy="120" rx="60" ry="10" fill="#3a1c10" opacity=".22" />
+
+        <ellipse cx="112" cy="70" rx="66" ry="48" fill="url(#dish-bowl)" />
+        <ellipse cx="112" cy="70" rx="66" ry="48" stroke="#d9c39a" stroke-width="2" />
+        <ellipse cx="112" cy="71" rx="55" ry="39" fill="url(#dish-hummus)" />
+
+        <path d="M112 42c20 0 33 12 33 27s-14 26-33 26-30-10-30-24 11-21 26-21 23 8 23 18-8 15-17 15-14-5-14-11 4-9 9-9"
+              stroke="#d5b177" stroke-opacity=".85" stroke-width="2.4" fill="none" stroke-linecap="round" />
+
+        <ellipse cx="112" cy="70" rx="17" ry="12" fill="#e2a11c" opacity=".55" />
+        <g fill="#e0c288">
+          <ellipse cx="103" cy="64" rx="5" ry="4.4" /><ellipse cx="119" cy="61" rx="4.4" ry="3.8" />
+          <ellipse cx="113" cy="76" rx="4.6" ry="4" />
+        </g>
+        <g fill="#6e7a3d">
+          <ellipse cx="95" cy="82" rx="4.4" ry="2.6" transform="rotate(-24 95 82)" />
+          <ellipse cx="131" cy="80" rx="4" ry="2.4" transform="rotate(18 131 80)" />
+          <ellipse cx="124" cy="52" rx="3.6" ry="2.2" transform="rotate(-8 124 52)" />
+        </g>
+        <g fill="#c1502e" opacity=".8">
+          <circle cx="88" cy="66" r="1.7" /><circle cx="136" cy="68" r="1.5" />
+          <circle cx="108" cy="90" r="1.6" /><circle cx="126" cy="90" r="1.3" />
+        </g>
+
+        <path d="M162 96c8-8 16-11 26-10" stroke="#6e7a3d" stroke-width="2" stroke-linecap="round" />
+        <ellipse cx="171" cy="90" rx="5" ry="3.2" transform="rotate(-32 171 90)" fill="#6e7a3d" />
+        <ellipse cx="182" cy="96" rx="4.6" ry="3" transform="rotate(-14 182 96)" fill="#8b9750" />
+      </svg>
     </div>
     <div class="hero-divider" aria-hidden="true"></div>
   </section>
