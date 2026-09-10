@@ -1,367 +1,376 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Levante Kitchen – Levantinische Küche in Freiburg</title>
-<meta name="description" content="Levante Kitchen: levantinische Küche in Uni-Nähe Freiburg – Hummus, Falafel, Shawarma &amp; Mezze. Dies ist ein Website-Entwurf / Pitch.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ccircle%20cx='50'%20cy='50'%20r='48'%20fill='%23C1502E'/%3E%3Ctext%20x='50'%20y='68'%20font-size='58'%20font-family='Georgia,serif'%20fill='%23FBF3E4'%20text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&amp;family=Mulish:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Levante Kitchen — Falafel, Hummus und Shawarma, Universitätsstraße 13</title>
+<meta name="description" content="Levante Kitchen, Universitätsstraße 13 in Freiburg: Falafel, Hummus, Shawarma und Mezze mit Sumach, Za'atar und Kreuzkümmel. Die Hälfte der Karte ist vegan. Täglich bis 22 Uhr." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23f7f1e3'/%3E%3Ccircle cx='12' cy='13' r='7' fill='%234a5d33'/%3E%3Ccircle cx='21' cy='19' r='7' fill='%23a33b2a'/%3E%3C/svg%3E" />
 </head>
 <body>
-<a class="skip-link" href="#main">Zum Inhalt springen</a>
 
-<header class="site-header">
-  <div class="header-inner">
-    <a href="#top" class="logo">Levante <span>Kitchen</span></a>
-    <nav class="main-nav" aria-label="Hauptnavigation">
-      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-list">
-        <span></span><span></span><span></span>
-        <span class="sr-only">Menü öffnen</span>
-      </button>
-      <ul id="nav-list">
-        <li><a href="#ueber-uns">Über uns</a></li>
-        <li><a href="#angebot">Angebot</a></li>
-        <li><a href="#galerie">Eindrücke</a></li>
-        <li><a href="#oeffnungszeiten">Öffnungszeiten</a></li>
-        <li><a href="#kontakt">Standort &amp; Kontakt</a></li>
+<a class="skip-link" href="#main">Direkt zum Inhalt</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Levante Kitchen — Start">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="15" cy="16" r="9" fill="#4a5d33" />
+        <circle cx="26" cy="24" r="9" fill="#a33b2a" />
+        <circle cx="24" cy="12" r="6" fill="#d9c08a" />
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name">Levante Kitchen</span>
+        <span class="brand-sub">Universitätsstraße 13 · Freiburg</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="mainNav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="#gewuerze">Gewürzregal</a></li>
+        <li><a href="#karte">Karte</a></li>
+        <li><a href="#vegan">Vegan</a></li>
+        <li><a href="#mittag">Mittagspause</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </nav>
+
+    <span class="header-status" id="headerStatus" hidden></span>
   </div>
 </header>
 
 <main id="main">
 
-  <section id="top" class="hero">
-    <div class="hero-pattern" aria-hidden="true"></div>
-    <div class="hero-content">
+  <!-- ================= HERO =================
+       Levantinische Küche unterscheidet sich nicht durch die Zutaten,
+       sondern durch drei, vier Gewürze. Genau das steht hier statt
+       eines weiteren "frisch und ehrlich". -->
+  <section class="hero">
+    <div class="wrap hero-inner">
       <div class="hero-copy">
-        <p class="eyebrow">Asiatisch · Orientalisch &amp; Kebap</p>
-        <h1>Levante Kitchen</h1>
-        <p class="claim">Levantinische Frische zwischen Vorlesung und Feierabend – Hummus, Falafel &amp; Shawarma, direkt in Uni-Nähe in Freiburg.</p>
-        <div class="cta-row">
-          <a href="#angebot" class="btn btn-primary">Speisekarte ansehen</a>
-          <a href="#kontakt" class="btn btn-outline">Anfahrt</a>
+        <p class="eyebrow">Universitätsstraße 13 · direkt bei der Uni</p>
+        <h1>Sumach, Za'atar, Kreuzkümmel.<br /><em>Der Rest ist Handwerk.</em></h1>
+        <p class="hero-lead">
+          Kichererbsen und Fladenbrot gibt es überall. Was daraus levantinisches
+          Essen macht, sind ein paar Gewürze, die man kennen muss — und die
+          Bereitschaft, alles frisch zu machen, auch mittags um halb eins.
+        </p>
+
+        <div class="status-badge" id="statusBadge" hidden>
+          <span class="status-dot" aria-hidden="true"></span>
+          <span id="statusText"></span>
         </div>
-        <p class="social-proof">Schon heute über 200 positive Bewertungen bei Google &amp; Lieferando</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#karte">Zur Karte</a>
+          <a class="btn btn-outline" href="#gewuerze">Was ist Za'atar?</a>
+        </div>
       </div>
 
-      <!--
-        Der gedeckte Teller: gezeichnet statt fotografiert, damit er in
-        jeder Größe scharf bleibt, nichts nachlädt und keine Bildrechte
-        braucht — und weil ein Stockfoto von Hummus aussieht wie das von
-        jedem anderen Laden, was für eine Seite, die genau aus der
-        Lieferportal-Vorlage heraus will, die falsche Aussage wäre.
-        Rein dekorativ, deshalb aria-hidden.
-      -->
-      <svg class="hero-art" viewBox="0 0 190 140" fill="none" aria-hidden="true" focusable="false">
-        <defs>
-          <radialGradient id="dish-hummus" cx=".42" cy=".34" r=".78">
-            <stop offset="0" stop-color="#f7e3bb" />
-            <stop offset=".65" stop-color="#e8cf9c" />
-            <stop offset="1" stop-color="#cdb075" />
-          </radialGradient>
-          <linearGradient id="dish-bowl" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#ffffff" />
-            <stop offset="1" stop-color="#e6d7bd" />
-          </linearGradient>
-        </defs>
+      <!-- Mezze von oben: Schalen auf einem Tablett. -->
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 340 340" fill="none">
+          <circle cx="170" cy="170" r="160" fill="#e9e0c9" />
+          <circle cx="170" cy="170" r="152" fill="none" stroke="#c9b98f" stroke-width="3" stroke-dasharray="6 8" />
 
-        <g transform="rotate(-14 44 84)">
-          <ellipse cx="44" cy="84" rx="34" ry="24" fill="#e7c48c" />
-          <ellipse cx="44" cy="80" rx="34" ry="24" fill="#f2d9a9" />
-          <g fill="#d8ac6d" opacity=".7">
-            <circle cx="32" cy="74" r="2.6" /><circle cx="50" cy="70" r="2" />
-            <circle cx="44" cy="86" r="2.3" /><circle cx="58" cy="84" r="1.8" />
+          <!-- Hummus -->
+          <g transform="translate(60,64)">
+            <circle r="52" fill="#f4ecd6" stroke="#c9b98f" stroke-width="3" />
+            <circle r="40" fill="#e7d9ac" />
+            <path d="M-24 4a24 24 0 0 1 48 0 24 24 0 0 1-48 0z" fill="#dcc98d" />
+            <circle cx="0" cy="0" r="9" fill="#4a5d33" opacity=".8" />
+            <g fill="#a33b2a"><circle cx="-18" cy="-16" r="3" /><circle cx="16" cy="-20" r="2.6" /><circle cx="20" cy="14" r="3" /></g>
           </g>
-        </g>
 
-        <ellipse cx="112" cy="120" rx="60" ry="10" fill="#3a1c10" opacity=".22" />
+          <!-- Falafel -->
+          <g transform="translate(230,86)">
+            <circle r="46" fill="#f4ecd6" stroke="#c9b98f" stroke-width="3" />
+            <g fill="#4a5d33" stroke="#38472a" stroke-width="2.4">
+              <circle cx="-14" cy="-10" r="13" /><circle cx="12" cy="-14" r="12" />
+              <circle cx="0" cy="10" r="13" /><circle cx="-18" cy="16" r="11" />
+              <circle cx="20" cy="12" r="11" />
+            </g>
+          </g>
 
-        <ellipse cx="112" cy="70" rx="66" ry="48" fill="url(#dish-bowl)" />
-        <ellipse cx="112" cy="70" rx="66" ry="48" stroke="#d9c39a" stroke-width="2" />
-        <ellipse cx="112" cy="71" rx="55" ry="39" fill="url(#dish-hummus)" />
+          <!-- Baba Ganoush -->
+          <g transform="translate(96,232)">
+            <circle r="46" fill="#f4ecd6" stroke="#c9b98f" stroke-width="3" />
+            <circle r="34" fill="#7a6a72" />
+            <g fill="#a33b2a"><circle cx="-10" cy="-8" r="3.4" /><circle cx="8" cy="-12" r="3" /><circle cx="12" cy="8" r="3.4" /><circle cx="-8" cy="12" r="3" /></g>
+            <path d="M-20 0c12-8 28-8 40 0" stroke="#d9c08a" stroke-width="3" fill="none" />
+          </g>
 
-        <path d="M112 42c20 0 33 12 33 27s-14 26-33 26-30-10-30-24 11-21 26-21 23 8 23 18-8 15-17 15-14-5-14-11 4-9 9-9"
-              stroke="#d5b177" stroke-opacity=".85" stroke-width="2.4" fill="none" stroke-linecap="round" />
+          <!-- Fladenbrot -->
+          <g transform="translate(238,232)">
+            <ellipse rx="52" ry="44" fill="#e0be7c" stroke="#b8934f" stroke-width="3" />
+            <g fill="#c9a45f"><circle cx="-16" cy="-12" r="5" /><circle cx="12" cy="-16" r="4" /><circle cx="18" cy="10" r="5" /><circle cx="-14" cy="14" r="4.4" /><circle cx="0" cy="0" r="4" /></g>
+          </g>
 
-        <ellipse cx="112" cy="70" rx="17" ry="12" fill="#e2a11c" opacity=".55" />
-        <g fill="#e0c288">
-          <ellipse cx="103" cy="64" rx="5" ry="4.4" /><ellipse cx="119" cy="61" rx="4.4" ry="3.8" />
-          <ellipse cx="113" cy="76" rx="4.6" ry="4" />
-        </g>
-        <g fill="#6e7a3d">
-          <ellipse cx="95" cy="82" rx="4.4" ry="2.6" transform="rotate(-24 95 82)" />
-          <ellipse cx="131" cy="80" rx="4" ry="2.4" transform="rotate(18 131 80)" />
-          <ellipse cx="124" cy="52" rx="3.6" ry="2.2" transform="rotate(-8 124 52)" />
-        </g>
-        <g fill="#c1502e" opacity=".8">
-          <circle cx="88" cy="66" r="1.7" /><circle cx="136" cy="68" r="1.5" />
-          <circle cx="108" cy="90" r="1.6" /><circle cx="126" cy="90" r="1.3" />
-        </g>
-
-        <path d="M162 96c8-8 16-11 26-10" stroke="#6e7a3d" stroke-width="2" stroke-linecap="round" />
-        <ellipse cx="171" cy="90" rx="5" ry="3.2" transform="rotate(-32 171 90)" fill="#6e7a3d" />
-        <ellipse cx="182" cy="96" rx="4.6" ry="3" transform="rotate(-14 182 96)" fill="#8b9750" />
-      </svg>
-    </div>
-    <div class="hero-divider" aria-hidden="true"></div>
-  </section>
-
-  <section id="ueber-uns" class="section">
-    <div class="section-head">
-      <p class="eyebrow eyebrow-dark">Über uns</p>
-      <h2>Die Küche der Levante, mitten in Freiburg</h2>
-    </div>
-    <div class="about-grid">
-      <p>Bislang sind wir vor allem über eine automatisch generierte Lieferando-Seite zu finden – dabei steckt hinter Levante Kitchen mehr: die Aromen der Levante, mitten in Freiburg.</p>
-      <p>Zwischen Vorlesungen und Mittagspause treffen bei uns geröstete Kichererbsen, warmes Fladenbrot direkt aus dem Ofen und Gewürze wie Kreuzkümmel, Sumach und Za'atar aufeinander.</p>
-      <p>Wir kochen, wie man es an belebten Straßenecken zwischen Beirut, Damaskus und Amman findet – ehrlich, frisch zubereitet und ohne unnötigen Schnickschnack, mit veganen und vegetarischen Optionen fest im Angebot.</p>
-      <p>In unmittelbarer Nähe der Universität Freiburg gelegen, sind wir der Ort für alle, die auch mittags keine Kompromisse bei Frische und Geschmack eingehen wollen.</p>
+          <!-- Gewürzschälchen -->
+          <g transform="translate(170,158)">
+            <circle r="26" fill="#f4ecd6" stroke="#c9b98f" stroke-width="3" />
+            <path d="M-18 0a18 18 0 0 1 36 0z" fill="#a33b2a" />
+            <path d="M-18 0a18 18 0 0 0 36 0z" fill="#4a5d33" />
+          </g>
+        </svg>
+      </div>
     </div>
   </section>
 
-  <section id="angebot" class="section section-alt">
-    <div class="section-head">
-      <p class="eyebrow eyebrow-dark">Angebot</p>
-      <h2>Unsere Klassiker</h2>
-      <p class="section-note">Levantinische Klassiker, die funktioniert haben – schnell und ehrlich gemacht.</p>
-    </div>
-    <div class="menu-grid">
-
-      <article class="menu-card">
-        <div class="menu-card-top pattern-falafel" aria-hidden="true"></div>
-        <div class="menu-card-body">
-          <div class="menu-card-title">
-            <h3>Falafel Wrap</h3>
-            <span class="price">7,50 €</span>
-          </div>
-          <p>Knusprige Falafel, Salat und Tahini-Sauce, eingerollt in warmem Fladenbrot.</p>
-          <span class="tag tag-veggie">Vegan · Studi-Favorit</span>
-        </div>
-      </article>
-
-      <article class="menu-card">
-        <div class="menu-card-top pattern-hummus" aria-hidden="true"></div>
-        <div class="menu-card-body">
-          <div class="menu-card-title">
-            <h3>Hummus Wrap</h3>
-            <span class="price">7,00 €</span>
-          </div>
-          <p>Cremiger Kichererbsen-Hummus mit frischem Gemüse und Kräutern im Wrap.</p>
-          <span class="tag tag-veggie">Vegetarisch</span>
-        </div>
-      </article>
-
-      <article class="menu-card">
-        <div class="menu-card-top pattern-shawarma" aria-hidden="true"></div>
-        <div class="menu-card-body">
-          <div class="menu-card-title">
-            <h3>Shawarma-Box Hähnchen</h3>
-            <span class="price">7,80 €</span>
-          </div>
-          <p>Mariniertes Hähnchen-Shawarma mit Reis oder Pommes, Salat und Sauce.</p>
-          <span class="tag tag-fave">Klassiker</span>
-        </div>
-      </article>
-
-      <article class="menu-card">
-        <div class="menu-card-top pattern-shawarma-alt" aria-hidden="true"></div>
-        <div class="menu-card-body">
-          <div class="menu-card-title">
-            <h3>Falafel-Box</h3>
-            <span class="price">7,50 €</span>
-          </div>
-          <p>Falafel mit Reis oder Pommes, Salat und Tahini-Sauce.</p>
-          <span class="tag tag-veggie">Vegan</span>
-        </div>
-      </article>
-
-      <article class="menu-card">
-        <div class="menu-card-top pattern-babaganoush" aria-hidden="true"></div>
-        <div class="menu-card-body">
-          <div class="menu-card-title">
-            <h3>Tofu-Shawarma Wrap</h3>
-            <span class="price">7,50 €</span>
-          </div>
-          <p>Mariniertes Tofu-Shawarma, Salat und Sauce im Wrap – laut Bewertungen eine beliebte vegane Option.</p>
-          <span class="tag tag-veggie">Vegan-Tipp</span>
-        </div>
-      </article>
-
-      <article class="menu-card">
-        <div class="menu-card-top pattern-vegi" aria-hidden="true"></div>
-        <div class="menu-card-body">
-          <div class="menu-card-title">
-            <h3>Linsensuppe</h3>
-            <span class="price">4,50 €</span>
-          </div>
-          <p>Warme orientalische Linsensuppe mit Zitrone und Kreuzkümmel.</p>
-          <span class="tag tag-veggie">Kleiner Hunger</span>
-        </div>
-      </article>
-
-      <article class="menu-card menu-card-wide">
-        <div class="menu-card-top pattern-mezze" aria-hidden="true"></div>
-        <div class="menu-card-body">
-          <div class="menu-card-title">
-            <h3>Mezze-Platte für 2</h3>
-            <span class="price">16,90 €</span>
-          </div>
-          <p>Hummus, Falafel, Oliven, eingelegtes Gemüse und frisches Fladenbrot – zum Teilen.</p>
-          <span class="tag tag-fave">Neu im Vorschlag</span>
-        </div>
-      </article>
-
-      <article class="menu-card">
-        <div class="menu-card-top pattern-kebap" aria-hidden="true"></div>
-        <div class="menu-card-body">
-          <div class="menu-card-title">
-            <h3>Baba Ganoush Teller</h3>
-            <span class="price">6,50 €</span>
-          </div>
-          <p>Geräucherte Auberginencreme mit Tahini und Granatapfelkernen.</p>
-          <span class="tag tag-fave">Neu im Vorschlag</span>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <section id="galerie" class="section">
-    <div class="section-head">
-      <p class="eyebrow eyebrow-dark">Eindrücke</p>
-      <h2>Aromen, die man sieht</h2>
-      <p class="section-note">Falafel braucht keine Inszenierung, nur das richtige Licht.</p>
-    </div>
-    <div class="gallery-grid">
-
-      <figure class="gallery-tile tile-saffron">
-        <svg viewBox="0 0 64 64" class="tile-icon" aria-hidden="true">
-          <path d="M12 40c4-14 16-24 20-24s16 10 20 24c-6 6-14 8-20 8s-14-2-20-8Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
-          <path d="M20 34c4-8 8-12 12-12s8 4 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-        <figcaption>Warmes Fladenbrot</figcaption>
-      </figure>
-
-      <figure class="gallery-tile tile-olive">
-        <svg viewBox="0 0 64 64" class="tile-icon" aria-hidden="true">
-          <circle cx="24" cy="30" r="6" fill="currentColor"/>
-          <circle cx="38" cy="24" r="6" fill="currentColor"/>
-          <circle cx="34" cy="40" r="6" fill="currentColor"/>
-          <path d="M14 46c8-2 28-2 36 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
-        </svg>
-        <figcaption>Cremiger Hummus</figcaption>
-      </figure>
-
-      <figure class="gallery-tile tile-terracotta">
-        <svg viewBox="0 0 64 64" class="tile-icon" aria-hidden="true">
-          <circle cx="22" cy="26" r="7" fill="currentColor"/>
-          <circle cx="40" cy="22" r="7" fill="currentColor"/>
-          <circle cx="32" cy="40" r="7" fill="currentColor"/>
-          <circle cx="14" cy="42" r="7" fill="currentColor"/>
-          <circle cx="46" cy="42" r="7" fill="currentColor"/>
-        </svg>
-        <figcaption>Knusprige Falafel</figcaption>
-      </figure>
-
-      <figure class="gallery-tile tile-olive-dark">
-        <svg viewBox="0 0 64 64" class="tile-icon" aria-hidden="true">
-          <path d="M32 10c10 6 16 16 16 26a16 16 0 0 1-32 0c0-10 6-20 16-26Z" fill="none" stroke="currentColor" stroke-width="2.5"/>
-          <path d="M32 18v28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-        <figcaption>Duftende Gewürze</figcaption>
-      </figure>
-
-      <figure class="gallery-tile tile-saffron-dark">
-        <svg viewBox="0 0 64 64" class="tile-icon" aria-hidden="true">
-          <path d="M32 8c8 4 8 12 0 16-8-4-8-12 0-16Z" fill="currentColor"/>
-          <path d="M12 32c4-8 12-8 16 0-4 8-12 8-16 0Z" fill="currentColor"/>
-          <path d="M52 32c-4-8-12-8-16 0 4 8 12 8 16 0Z" fill="currentColor"/>
-          <path d="M32 56c-8-4-8-12 0-16 8 4 8 12 0 16Z" fill="currentColor"/>
-        </svg>
-        <figcaption>Frische Kräuter</figcaption>
-      </figure>
-
-      <figure class="gallery-tile tile-terracotta-dark">
-        <svg viewBox="0 0 64 64" class="tile-icon" aria-hidden="true">
-          <rect x="20" y="14" width="24" height="36" rx="3" fill="none" stroke="currentColor" stroke-width="2.5"/>
-          <path d="M20 24h24M20 34h24M20 44h24" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M28 14V8M36 14V8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-        <figcaption>Mezze zum Teilen</figcaption>
-      </figure>
-
-    </div>
-  </section>
-
-  <section id="oeffnungszeiten" class="section section-alt">
-    <div class="section-head">
-      <p class="eyebrow eyebrow-dark">Öffnungszeiten</p>
-      <h2>Wann wir für euch da sind</h2>
-      <p class="section-note">Öffnungszeiten, wenn die Schicht am meisten Sinn macht – morgens zum Frühstück, mittags zum Lunch, abends zum Essen.</p>
-    </div>
-    <div class="hours-wrap">
-      <table class="hours-table">
-        <caption class="sr-only">Öffnungszeiten von Levante Kitchen</caption>
-        <tbody>
-          <tr><th scope="row">Montag – Samstag</th><td>11:30 – 22:00 Uhr</td></tr>
-          <tr><th scope="row">Sonntag</th><td>12:00 – 22:00 Uhr</td></tr>
-        </tbody>
-      </table>
-      <p class="hours-hint">Praktisch für die Mittagspause zwischen den Vorlesungen und für den entspannten Feierabend – jeden Tag geöffnet.</p>
-    </div>
-  </section>
-
-  <section id="kontakt" class="section">
-    <div class="section-head">
-      <p class="eyebrow eyebrow-dark">Standort &amp; Kontakt</p>
-      <h2>Findet uns in Uni-Nähe</h2>
-    </div>
-    <div class="contact-grid">
-
-      <div class="contact-info">
-        <address>
-          <strong>Levante Kitchen</strong><br>
-          Universitätsstraße 13<br>
-          79098 Freiburg im Breisgau
-        </address>
-        <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Levante%20Kitchen%2C%20Universit%C3%A4tsstra%C3%9Fe%2013%2C%2079098%20Freiburg%20im%20Breisgau" target="_blank" rel="noopener noreferrer">
-          Route planen
-        </a>
-        <p class="contact-hint">Kontaktdaten wie Telefonnummer und E-Mail folgen mit dem echten Webauftritt.</p>
+  <!-- ================= GEWÜRZREGAL ================= -->
+  <section class="section spices" id="gewuerze">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Das Gewürzregal</p>
+        <h2>Vier Gläser, die den Unterschied machen</h2>
+        <p class="section-note">
+          Wer weiß, was in der Schale ist, bestellt beim zweiten Mal anders.
+          Deshalb hier kurz, was welches Gewürz mit dem Essen macht.
+        </p>
       </div>
 
-      <form class="contact-form" id="contact-form" novalidate>
-        <p class="form-disclaimer">Entwurf-Hinweis: Dieses Formular ist Teil des Website-Vorschlags und aktuell nicht aktiv – es werden keine Nachrichten versendet.</p>
-        <div class="form-row">
-          <label for="cf-name">Name</label>
-          <input type="text" id="cf-name" name="name" placeholder="Dein Name" autocomplete="off">
-        </div>
-        <div class="form-row">
-          <label for="cf-email">E-Mail</label>
-          <input type="email" id="cf-email" name="email" placeholder="deine@email.de" autocomplete="off">
-        </div>
-        <div class="form-row">
-          <label for="cf-message">Nachricht</label>
-          <textarea id="cf-message" name="message" rows="4" placeholder="Deine Nachricht an uns"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Nachricht senden</button>
-        <p class="form-response" id="form-response" role="status" aria-live="polite" hidden></p>
-      </form>
+      <div class="spice-grid">
+        <article class="spice">
+          <span class="sp-jar" style="--c:#a33b2a" aria-hidden="true"></span>
+          <h3>Sumach</h3>
+          <p class="sp-role">säuerlich</p>
+          <p>Getrocknete, gemahlene Beeren. Bringt Säure ohne Zitrone — der Grund, warum ein Salat aus dieser Küche wach schmeckt statt schwer.</p>
+        </article>
+        <article class="spice">
+          <span class="sp-jar" style="--c:#4a5d33" aria-hidden="true"></span>
+          <h3>Za'atar</h3>
+          <p class="sp-role">kräuterig</p>
+          <p>Mischung aus Thymian, Sesam und Sumach. Kommt auf Fladenbrot, in Öl, über Hummus. Riecht nach der ganzen Region.</p>
+        </article>
+        <article class="spice">
+          <span class="sp-jar" style="--c:#8a5a2a" aria-hidden="true"></span>
+          <h3>Kreuzkümmel</h3>
+          <p class="sp-role">erdig</p>
+          <p>Das Rückgrat von Falafel und Linsensuppe. Ohne ihn schmeckt beides nach Kichererbse beziehungsweise nach nichts.</p>
+        </article>
+        <article class="spice">
+          <span class="sp-jar" style="--c:#d9c08a" aria-hidden="true"></span>
+          <h3>Tahini</h3>
+          <p class="sp-role">cremig</p>
+          <p>Kein Gewürz, sondern Sesampaste — und die Sauce, die in fast jedem Wrap steckt. Bitter, nussig, unverzichtbar.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
+  <!-- ================= KARTE ================= -->
+  <section class="section menu" id="karte">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Die Karte</p>
+        <h2>Wraps, Boxen, Mezze</h2>
+        <p class="section-note">
+          Zum Mitnehmen im Wrap, zum Sattwerden in der Box, zum Teilen auf der
+          Platte. Preise wie in den öffentlich gelisteten Angaben.
+        </p>
+      </div>
+
+      <div class="menu-cols">
+        <div class="menu-col">
+          <h3 class="mc-head">Im Wrap</h3>
+          <ul class="menu-list">
+            <li>
+              <span class="mi-name">Falafel Wrap</span>
+              <span class="mi-desc">Knusprige Falafel, Salat und Tahini-Sauce in warmem Fladenbrot.</span>
+              <span class="mi-price">7,50 €</span>
+              <span class="mi-tags"><em class="tag-vegan">vegan</em><em>Studi-Favorit</em></span>
+            </li>
+            <li>
+              <span class="mi-name">Hummus Wrap</span>
+              <span class="mi-desc">Cremiger Kichererbsen-Hummus mit frischem Gemüse und Kräutern.</span>
+              <span class="mi-price">7,00 €</span>
+              <span class="mi-tags"><em class="tag-veg">vegetarisch</em></span>
+            </li>
+            <li>
+              <span class="mi-name">Tofu-Shawarma Wrap</span>
+              <span class="mi-desc">Mariniertes Tofu-Shawarma, Salat und Sauce — laut Bewertungen die beliebte vegane Option.</span>
+              <span class="mi-price">7,50 €</span>
+              <span class="mi-tags"><em class="tag-vegan">vegan</em></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-col">
+          <h3 class="mc-head">In der Box</h3>
+          <ul class="menu-list">
+            <li>
+              <span class="mi-name">Shawarma-Box Hähnchen</span>
+              <span class="mi-desc">Mariniertes Hähnchen-Shawarma mit Reis oder Pommes, Salat und Sauce.</span>
+              <span class="mi-price">7,80 €</span>
+              <span class="mi-tags"><em>Klassiker</em></span>
+            </li>
+            <li>
+              <span class="mi-name">Falafel-Box</span>
+              <span class="mi-desc">Falafel mit Reis oder Pommes, Salat und Tahini-Sauce.</span>
+              <span class="mi-price">7,50 €</span>
+              <span class="mi-tags"><em class="tag-vegan">vegan</em></span>
+            </li>
+            <li>
+              <span class="mi-name">Linsensuppe</span>
+              <span class="mi-desc">Warm, mit Zitrone und Kreuzkümmel. Für den kleinen Hunger oder als Vorspeise.</span>
+              <span class="mi-price">4,50 €</span>
+              <span class="mi-tags"><em class="tag-vegan">vegan</em></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-col">
+          <h3 class="mc-head">Zum Teilen</h3>
+          <ul class="menu-list">
+            <li>
+              <span class="mi-name">Mezze-Platte für zwei</span>
+              <span class="mi-desc">Hummus, Falafel, Oliven, eingelegtes Gemüse und frisches Fladenbrot.</span>
+              <span class="mi-price">16,90 €</span>
+              <span class="mi-tags"><em class="tag-new">Vorschlag</em></span>
+            </li>
+            <li>
+              <span class="mi-name">Baba Ganoush Teller</span>
+              <span class="mi-desc">Geräucherte Auberginencreme mit Tahini und Granatapfelkernen.</span>
+              <span class="mi-price">6,50 €</span>
+              <span class="mi-tags"><em class="tag-new">Vorschlag</em></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="menu-note">
+        Preise und Gerichte folgen den öffentlich gelisteten Angaben. Mit
+        „Vorschlag" markierte Positionen sind Ergänzungen für diesen Entwurf und
+        noch nicht mit der Küche abgestimmt.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= VEGAN =================
+       Aus der Karte selbst ableitbar und deshalb eine belastbare
+       Aussage: Von den belegten Positionen sind vier von sechs ohne
+       tierische Produkte. Das ist keine Nische, das ist die Karte. -->
+  <section class="section vegan" id="vegan">
+    <div class="wrap vegan-grid">
+      <div>
+        <p class="kicker">Kein Sonderfall</p>
+        <h2>Vier von sechs Gerichten sind vegan</h2>
+        <p>
+          Das ist keine Nische, sondern die Karte. Levantinische Küche kommt
+          aus einer Tradition, in der Fleisch die Ausnahme war und Kichererbse,
+          Aubergine und Sesam die Regel — nicht aus einem Ernährungstrend.
+        </p>
+        <p>
+          Praktisch heißt das: Wer in einer gemischten Runde bestellt, muss
+          niemanden fragen, ob hier auch etwas für ihn dabei ist.
+        </p>
+      </div>
+
+      <figure class="ratio">
+        <div class="ratio-bar" aria-hidden="true">
+          <span class="rb-vegan" style="--w:66.6%"></span>
+          <span class="rb-rest"></span>
+        </div>
+        <figcaption>
+          <span><span class="key key-vegan" aria-hidden="true"></span> vegan: Falafel Wrap, Tofu-Shawarma Wrap, Falafel-Box, Linsensuppe</span>
+          <span><span class="key key-rest" aria-hidden="true"></span> übrige: Hummus Wrap (vegetarisch), Shawarma-Box Hähnchen</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= MITTAGSPAUSE ================= -->
+  <section class="section lunch" id="mittag">
+    <div class="wrap lunch-grid">
+      <div>
+        <p class="kicker">Universitätsstraße</p>
+        <h2>Zwischen zwei Vorlesungen</h2>
+        <p>
+          Der Laden liegt in unmittelbarer Nähe der Universität, und das prägt
+          den Tag: Um halb zwölf geht es los, mittags wird es voll, abends wird
+          es ruhiger und bleibt bis zehn.
+        </p>
+        <p>
+          Wer wenig Zeit hat, nimmt einen Wrap — der ist gerollt, bevor die Box
+          gefüllt wäre, und lässt sich im Gehen essen.
+        </p>
+      </div>
+
+      <ul class="hours-list" id="hoursList">
+        <li data-day="1"><span>Montag</span><em>11:30 – 22:00</em></li>
+        <li data-day="2"><span>Dienstag</span><em>11:30 – 22:00</em></li>
+        <li data-day="3"><span>Mittwoch</span><em>11:30 – 22:00</em></li>
+        <li data-day="4"><span>Donnerstag</span><em>11:30 – 22:00</em></li>
+        <li data-day="5"><span>Freitag</span><em>11:30 – 22:00</em></li>
+        <li data-day="6"><span>Samstag</span><em>11:30 – 22:00</em></li>
+        <li data-day="0"><span>Sonntag</span><em>12:00 – 22:00</em></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= KONTAKT ================= -->
+  <section class="section contact" id="kontakt">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="kicker">Herfinden</p>
+        <h2>Universitätsstraße 13</h2>
+        <p class="section-note">
+          Mitten im Uni-Viertel, zu Fuß von den Hörsälen und von der Innenstadt
+          gleich weit.
+        </p>
+
+        <a class="contact-link" href="https://www.google.com/maps/search/?api=1&amp;query=Universit%C3%A4tsstra%C3%9Fe%2013%2C%2079098%20Freiburg%20im%20Breisgau" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21c-5-5-8-8.6-8-12a8 8 0 0 1 16 0c0 3.4-3 7-8 12Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9" r="2.6" stroke="currentColor" stroke-width="1.6"/></svg>
+          <span><strong>Universitätsstraße 13</strong><span>79098 Freiburg im Breisgau · Route planen</span></span>
+        </a>
+      </div>
+
+      <aside class="note-card">
+        <h3>Was hier noch fehlt</h3>
+        <p>
+          Für Levante Kitchen ist öffentlich weder eine Telefonnummer noch eine
+          E-Mail-Adresse zu finden — bislang läuft die Sichtbarkeit über eine
+          automatisch erzeugte Lieferando-Seite.
+        </p>
+        <p>
+          Das frühere Kontaktformular auf dieser Seite ist entfernt: Es war
+          ohne Funktion, und ein Formular, das nichts verschickt, weckt eine
+          Erwartung, die es nicht einlöst.
+        </p>
+        <p class="todo">
+          <strong>Vor dem Launch:</strong> Telefonnummer und E-Mail-Adresse
+          ergänzen, Karte und Preise mit der Küche bestätigen.
+        </p>
+      </aside>
     </div>
   </section>
 
 </main>
 
 <footer class="site-footer">
-  <div class="footer-inner">
-    <p class="footer-brand">Levante Kitchen</p>
-    <p>&copy; <span id="year">2026</span> Levante Kitchen · Dies ist ein Website-Entwurf / Pitch-Vorschlag für den zukünftigen Webauftritt, kein aktiver Betrieb.</p>
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-name">Levante Kitchen</span>
+      <p>Universitätsstraße 13 · 79098 Freiburg im Breisgau<br />Falafel, Hummus, Shawarma und Mezze. Täglich bis 22 Uhr.</p>
+    </div>
+    <nav class="footer-links" aria-label="Fußzeile">
+      <a href="#gewuerze">Gewürzregal</a>
+      <a href="#karte">Karte</a>
+      <a href="#vegan">Vegan</a>
+      <a href="#mittag">Öffnungszeiten</a>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>&copy; <span id="year">2026</span> Levante Kitchen</span>
+    <span class="footer-note">Website-Entwurf für den zukünftigen Webauftritt, kein aktiver Betrieb. Kontaktdaten, Impressum und Datenschutzerklärung fehlen und sind vor einem echten Launch Pflicht.</span>
   </div>
 </footer>
 
